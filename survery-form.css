@@ -1,0 +1,130 @@
+/* Reset */
+
+*,
+  *::before,
+  *::after {
+    box-sizing: content-box;
+  }
+  
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: 400;
+  color: #ffffff;
+  margin-left:1.5rem
+}
+
+.form-frame{
+  background-color: #891fe0
+  
+} 
+
+
+/* mobile friendly alternative to using background-attachment: fixed */
+body::before {
+  content: ''; /* Creates the pseudo-element */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1); /* Semi-transparent overlay */
+  z-index: -1; /* Positions it behind the content */
+  background-image: linear-gradient(
+    115deg,
+    rgba(58, 58, 158, 0.8),
+    rgba(136, 136, 206, 0.7)
+  ),
+  url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+}
+
+
+/* Container */
+.container {
+  width: auto;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 10px;
+  align-content: center;
+
+}
+
+/* Headings and Text */
+h1{
+  font-weight: 600;
+  line-height: 1;
+  margin-left:1.5rem
+}
+
+.description {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left:1.5rem
+  
+}
+
+label {
+  display: flex;
+  align-items: center;
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+  margin-left:1.5rem
+}
+
+input,
+button,
+select,
+textarea {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.4;
+  margin-left:1.5rem
+  
+}
+
+
+button {
+  border: none;
+  margin-left:1.5rem
+  
+}
+
+.container {
+  width: 80%;
+  padding: 1%;
+  
+
+  margin: 1.5rem auto 1.5rem auto;
+}
+
+@media (min-width: 400px) {
+  .container {
+    max-width: 500px;
+  }
+}
+
+@media (min-width: 450px) {
+  .container {
+    max-width: 550px;
+  }
+
+
+input
+{
+  margin-left:1.5rem;
+  padding: 1px 2px;
+  border-width:0px;
+  border-style: inset;
+  border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+  border-image: initial;
+  color: white;
+}
+
+
